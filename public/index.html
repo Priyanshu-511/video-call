@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Call App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="videos">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <div class="buttons">
+        <button id="startCallBtn">Start Call</button>
+        <button id="endCallBtn" disabled>End Call</button>
+        <button id="muteBtn" disabled>Mute</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
